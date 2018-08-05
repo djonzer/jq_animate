@@ -8,12 +8,18 @@
     <body>
         <div>
             <button id="btnOne">One!</button>
+            <button id="btnTwo">Dragon One</button>
             <br />
             <div id="pageHead"
                 style="background:#98bf21;height:100px;width:100px;">
                 Hello world</div>
             <br />
             <div id="test1">Huh</div>
+            <br />
+            <div id="dragonOne"
+                style="background:light-red;height:50px;width:50px;">
+                Hello world</div>
+            <br />
         </div>
         <script>
         /*global $*/
@@ -39,7 +45,10 @@
                     function(){
                        $("#test1").text("Huh");
                     });
-
+                });
+                
+                $("#btnTwo").click(function(){
+                    
                 });
             });         
         </script>
