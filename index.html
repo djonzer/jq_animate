@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery too simple</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <div>
+            <button id="btnOne">One!</button>
+            <br />
+            <div id="pageHead"
+                style="background:#98bf21;height:100px;width:100px;">
+                Hello world</div>
+            <br />
+            <div id="test1">Huh</div>
+        </div>
+        <script>
+        /*global $*/
+            $(document).ready(function(){
+            
+               // jQuery methods go here...
+               $("#btnOne").click(function(){
+                   $("#test1").text("Move Down");
+                    var div = $("#pageHead");
+                    div.animate({height: '300px', opacity: '0.4'}, "slow",
+                    function(){
+                       $("#test1").text("Move Over");
+                    });
+                    div.animate({width: '300px', opacity: '0.8'}, "slow",
+                    function(){
+                       $("#test1").text("Move Up");
+                    });
+                    div.animate({height: '100px', opacity: '0.4'}, "slow",
+                    function(){
+                       $("#test1").text("Move Back");
+                    });
+                    div.animate({width: '100px', opacity: '0.8'}, "slow",
+                    function(){
+                       $("#test1").text("Huh");
+                    });
+
+                });
+            });         
+        </script>
+    </body>
+    
+</html>
