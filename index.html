@@ -7,17 +7,19 @@
     </head>
     <body>
         <div>
-            <button id="btnOne">One!</button>
-            <button id="btnTwo">Dragon One</button>
-            <br />
-            <div id="pageHead"
-                style="background:#98bf21;height:100px;width:100px;">
-                Hello world</div>
-            <br />
-            <div id="test1">Huh</div>
-            <br />
-            <img id="dragonOne" src="./images/welshflag.bmp" alt="snow" width="100">
-            <br />
+            <!--<button id="btnOne">One!</button>-->
+            <!--<button id="btnTwo">Dragon One</button>-->
+            <!--<br />-->
+            <!--<div id="pageHead"-->
+            <!--    style="background:#98bf21;height:100px;width:100px;">-->
+            <!--    Hello world</div>-->
+            <!--<br />-->
+            <!--<div id="test1">Huh</div>-->
+            <!--<br />-->
+            <!--<div>-->
+                <img id="dragonOne" src="./images/welshflag.bmp" alt="snow" width="100">
+            <!--</div>-->
+            <!--<br />-->
         </div>
         <script>
         /*global $*/
@@ -45,8 +47,10 @@
                     });
                 });
                 
-                $("#btnTwo").click(function(){
-                    
+                $("#dragonOne").click(function(){
+                    $("#dragonOne").animate({width: '250px'}, 1000);
+                    $("#dragonOne").animate({width: '50px'}, 2000);
+                    $("#dragonOne").animate({width: '100px'}, 500);
                 });
             });         
         </script>
